@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254E4E5B7FFF5EB550A80870 /* libPods-practiceOpenCV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8D8F7FF5976BBCD329B980 /* libPods-practiceOpenCV.a */; };
 		32E10BA71C428B040080BF7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E10BA61C428B040080BF7D /* AppDelegate.swift */; };
 		32E10BA91C428B040080BF7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E10BA81C428B040080BF7D /* ViewController.swift */; };
 		32E10BAC1C428B040080BF7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E10BAA1C428B040080BF7D /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A6BB7AB962C87F73D338358 /* Pods-practiceOpenCV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practiceOpenCV.release.xcconfig"; path = "Pods/Target Support Files/Pods-practiceOpenCV/Pods-practiceOpenCV.release.xcconfig"; sourceTree = "<group>"; };
 		32E10BA31C428B040080BF7D /* practiceOpenCV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = practiceOpenCV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E10BA61C428B040080BF7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32E10BA81C428B040080BF7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		32E10BC21C428B040080BF7D /* practiceOpenCVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = practiceOpenCVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E10BC61C428B040080BF7D /* practiceOpenCVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiceOpenCVUITests.swift; sourceTree = "<group>"; };
 		32E10BC81C428B040080BF7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC8D8F7FF5976BBCD329B980 /* libPods-practiceOpenCV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-practiceOpenCV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D048503142B20A247257C455 /* Pods-practiceOpenCV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practiceOpenCV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-practiceOpenCV/Pods-practiceOpenCV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				254E4E5B7FFF5EB550A80870 /* libPods-practiceOpenCV.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13B477307E94A832A2E56A07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC8D8F7FF5976BBCD329B980 /* libPods-practiceOpenCV.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		32E10B9A1C428B040080BF7D = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				32E10BBA1C428B040080BF7D /* practiceOpenCVTests */,
 				32E10BC51C428B040080BF7D /* practiceOpenCVUITests */,
 				32E10BA41C428B040080BF7D /* Products */,
+				67345F82A82A0128659687B1 /* Pods */,
+				13B477307E94A832A2E56A07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = practiceOpenCVUITests;
 			sourceTree = "<group>";
 		};
+		67345F82A82A0128659687B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D048503142B20A247257C455 /* Pods-practiceOpenCV.debug.xcconfig */,
+				0A6BB7AB962C87F73D338358 /* Pods-practiceOpenCV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32E10BCB1C428B050080BF7D /* Build configuration list for PBXNativeTarget "practiceOpenCV" */;
 			buildPhases = (
+				35D69F47CB93E1855F2A60B8 /* Check Pods Manifest.lock */,
 				32E10B9F1C428B040080BF7D /* Sources */,
 				32E10BA01C428B040080BF7D /* Frameworks */,
 				32E10BA11C428B040080BF7D /* Resources */,
+				C0184B771AAE0129AF402054 /* Embed Pods Frameworks */,
+				A496D5AD8018D5211BD8E17E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35D69F47CB93E1855F2A60B8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A496D5AD8018D5211BD8E17E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-practiceOpenCV/Pods-practiceOpenCV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0184B771AAE0129AF402054 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-practiceOpenCV/Pods-practiceOpenCV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32E10B9F1C428B040080BF7D /* Sources */ = {
@@ -395,6 +470,7 @@
 		};
 		32E10BCC1C428B050080BF7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D048503142B20A247257C455 /* Pods-practiceOpenCV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = practiceOpenCV/Info.plist;
@@ -406,6 +482,7 @@
 		};
 		32E10BCD1C428B050080BF7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A6BB7AB962C87F73D338358 /* Pods-practiceOpenCV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = practiceOpenCV/Info.plist;
@@ -482,6 +559,7 @@
 				32E10BCD1C428B050080BF7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32E10BCE1C428B050080BF7D /* Build configuration list for PBXNativeTarget "practiceOpenCVTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +568,7 @@
 				32E10BD01C428B050080BF7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32E10BD11C428B050080BF7D /* Build configuration list for PBXNativeTarget "practiceOpenCVUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +577,7 @@
 				32E10BD31C428B050080BF7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
