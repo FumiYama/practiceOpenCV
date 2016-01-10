@@ -15,6 +15,8 @@
 		32E10BB11C428B040080BF7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32E10BAF1C428B040080BF7D /* LaunchScreen.storyboard */; };
 		32E10BBC1C428B040080BF7D /* practiceOpenCVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E10BBB1C428B040080BF7D /* practiceOpenCVTests.swift */; };
 		32E10BC71C428B040080BF7D /* practiceOpenCVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E10BC61C428B040080BF7D /* practiceOpenCVUITests.swift */; };
+		32E10BD81C42B2B00080BF7D /* PracticeOpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 32E10BD71C42B2B00080BF7D /* PracticeOpenCV.mm */; };
+		32E10BDA1C42B2F60080BF7D /* qqq.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32E10BD91C42B2F60080BF7D /* qqq.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		32E10BC21C428B040080BF7D /* practiceOpenCVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = practiceOpenCVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E10BC61C428B040080BF7D /* practiceOpenCVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiceOpenCVUITests.swift; sourceTree = "<group>"; };
 		32E10BC81C428B040080BF7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32E10BD61C42B2AF0080BF7D /* practiceOpenCV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "practiceOpenCV-Bridging-Header.h"; sourceTree = "<group>"; };
+		32E10BD71C42B2B00080BF7D /* PracticeOpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PracticeOpenCV.mm; sourceTree = "<group>"; };
+		32E10BD91C42B2F60080BF7D /* qqq.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = qqq.jpg; sourceTree = "<group>"; };
 		AC8D8F7FF5976BBCD329B980 /* libPods-practiceOpenCV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-practiceOpenCV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D048503142B20A247257C455 /* Pods-practiceOpenCV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-practiceOpenCV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-practiceOpenCV/Pods-practiceOpenCV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,12 +117,15 @@
 		32E10BA51C428B040080BF7D /* practiceOpenCV */ = {
 			isa = PBXGroup;
 			children = (
+				32E10BD91C42B2F60080BF7D /* qqq.jpg */,
 				32E10BA61C428B040080BF7D /* AppDelegate.swift */,
 				32E10BA81C428B040080BF7D /* ViewController.swift */,
+				32E10BD71C42B2B00080BF7D /* PracticeOpenCV.mm */,
 				32E10BAA1C428B040080BF7D /* Main.storyboard */,
 				32E10BAD1C428B040080BF7D /* Assets.xcassets */,
 				32E10BAF1C428B040080BF7D /* LaunchScreen.storyboard */,
 				32E10BB21C428B040080BF7D /* Info.plist */,
+				32E10BD61C42B2AF0080BF7D /* practiceOpenCV-Bridging-Header.h */,
 			);
 			path = practiceOpenCV;
 			sourceTree = "<group>";
@@ -259,6 +267,7 @@
 				32E10BB11C428B040080BF7D /* LaunchScreen.storyboard in Resources */,
 				32E10BAE1C428B040080BF7D /* Assets.xcassets in Resources */,
 				32E10BAC1C428B040080BF7D /* Main.storyboard in Resources */,
+				32E10BDA1C42B2F60080BF7D /* qqq.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32E10BD81C42B2B00080BF7D /* PracticeOpenCV.mm in Sources */,
 				32E10BA91C428B040080BF7D /* ViewController.swift in Sources */,
 				32E10BA71C428B040080BF7D /* AppDelegate.swift in Sources */,
 			);
@@ -473,10 +483,13 @@
 			baseConfigurationReference = D048503142B20A247257C455 /* Pods-practiceOpenCV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = practiceOpenCV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yamanakafumiya.practiceOpenCV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "practiceOpenCV/practiceOpenCV-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -485,10 +498,12 @@
 			baseConfigurationReference = 0A6BB7AB962C87F73D338358 /* Pods-practiceOpenCV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = practiceOpenCV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yamanakafumiya.practiceOpenCV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "practiceOpenCV/practiceOpenCV-Bridging-Header.h";
 			};
 			name = Release;
 		};
